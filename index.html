@@ -5,29 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-<header>
-    <nav>
-
-    </nav>
-</header>
+    <header id="header">
+        <nav id="nav-bar">
+          <h1>Awesome books</h1>
+          <ul class="menu-list">
+              <li><a href="#" id="list">List</a></li>
+              <span class="line"></span>
+              <li><a href="#" id="new">Add New</a></li>
+              <span class="line"></span>
+              <li><a href="#contact-section" id="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p id="date"></p>
+    </header>
 <main>
     <section id="listbook">
-        <div class="list-container">
-
+        <h2>All Awesome books</h2>
+        <div id="list_container">
+         
         </div>
     </section>
-    <section id="addbook">
+    <section id="addbook" class="list-section">
         <form id="input-form">
+            <h3>Add new book</h3>
             <input id="form_title" type="text">
             <input id="form_author" type="text">
             <button id="form_button" type="submit">Add Book</button>
         </form>
     </section>
-    <section id="contact"></section>
+    <section id="contact" class="list-section hidden">
+        <h2>Contact Information</h2>
+        <p>If you have any question or just want to say "Hello!"?<br>You can reach out to us</p>            
+        <ul class="contact-list">
+            <li><a href="https://github.com/HFG43">Hernán Güemes</a></li>
+        </ul>
+    </section>
 </main>
-<footer></footer>
+<footer>
+    <div class="copyright">
+        <p>Copyright <a href="./MIT.md">MIT License</a></p>
+    </div>
+</footer>
     <script src="index.js"></script>
 </body>
 </html>
